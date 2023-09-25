@@ -15,9 +15,12 @@ function processPaymentNotice() {
       var payment_progress = readCell(payment_progress_cell);
 
       if (checkNotifiedForPaymentAlready(payment_progress)) {
+        resetResult(i);
         appendResult(i, "notified already, skipping");
       } else {
+        resetResult(i);
         appendResult(i, "not notified");
+
         // var student_email = readCell(email_cell);
       }
     }
