@@ -23,15 +23,18 @@ function processPaymentNotice() {
 
         var quota_available = checkEmailQuotaAvailable();
         if (quota_available) {
-          sendPaymentNoticeEmail(i);
-          updateRowToNotificationSent(i);
+          try {
+            sendPaymentNoticeEmail(i);
+            updateRowToNotificationSent(i);
+          } catch (error) {
+            Browser.msgBox("error during sending email");
+          }
         } else {
           Browser.msgBox(EMAIL_QUOTA_USED_UP);
         }
       } else {
         resetResult(i);
         appendResult(i, `not "${CONST_NOT_NOTIFIED}" skipping`);
-
         // var student_email = readCell(email_cell);
       }
     }
