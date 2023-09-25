@@ -1,0 +1,18 @@
+{
+  "name": "clasp-helloworld-tryout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Code.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cP": "clasp push",
+    "gU": "git add . && git commit -m\"update,\"",
+    "watch:cP": "nodemon -L --exec \"npm run cP\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
