@@ -81,7 +81,7 @@ function sendPaymentNoticeEmail(row) {
   // NOTE: courase_name
 
   try {
-    var subject = email_title("chinese course");
+    var subject = email_title(course_offered);
     // var body = email_content("中文名", "chinese 中文科", "CHI001");
     var htmlBody = email_content(
       student_chinese_name,
