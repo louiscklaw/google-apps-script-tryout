@@ -16,10 +16,13 @@ function processPaymentNotice() {
 
       if (checkNotNotifiedForPayment(payment_progress)) {
         resetResult(i);
-        appendResult(i, "not" + CONST_NOT_NOTIFIED + " skipping");
+        appendResult(
+          i,
+          `not notified(${CONST_NOT_NOTIFIED}), proceed send payment notification email`
+        );
       } else {
         resetResult(i);
-        appendResult(i, "not notified");
+        appendResult(i, `not "${CONST_NOT_NOTIFIED}" skipping`);
 
         // var student_email = readCell(email_cell);
       }
