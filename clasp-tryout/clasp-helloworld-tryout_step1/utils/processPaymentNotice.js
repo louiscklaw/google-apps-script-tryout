@@ -20,6 +20,8 @@ function processPaymentNotice() {
           i,
           `not notified(${CONST_NOT_NOTIFIED}), proceed send payment notification email`
         );
+
+        sendPaymentNoticeEmail(i);
       } else {
         resetResult(i);
         appendResult(i, `not "${CONST_NOT_NOTIFIED}" skipping`);
