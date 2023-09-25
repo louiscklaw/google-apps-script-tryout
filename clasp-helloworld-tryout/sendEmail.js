@@ -1,3 +1,3 @@
 function sendEmail() {
-  console.log('send email called')
+  console.log("send email called");
 }
