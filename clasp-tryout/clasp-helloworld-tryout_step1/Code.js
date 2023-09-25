@@ -10,4 +10,6 @@ function onOpen() {
     .addItem("send 繳費通知 (未通知 -> 已通知)", "getLastRow")
     .addItem("helloWorldEmail", "helloWorldEmail")
     .addToUi();
+
+  getLastRow();
 }

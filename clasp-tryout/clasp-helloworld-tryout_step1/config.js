@@ -1,4 +1,25 @@
-const VER = "1.0.1";
+const VER = "1.0.3";
 const SHEET_ID = "1RVl3rksPRzoG74WM6uDcIxXiW9uX7ppJj7iKr1hEDU0";
+
+// 學員進度
+const SHEET_STUDENT_PROGRESS = "學員進度";
+
+const COL_STUDENT_PROGRESS_CHINESE_NAME = "A"; //中文姓名
+const COL_STUDENT_PROGRESS_ENGLISH_NAME = "B"; // 英文姓名
+const COL_STUDENT_PROGRESS_COURSE_OFFERED = "C"; // 報價課程
+const COL_STUDENT_PROGRESS_COURSE_CODE = "D"; // 課程班號
+const COL_STUDENT_PROGRESS_GENDER = "F"; // 性別
+const COL_STUDENT_PROGRESS_PHONE_NUMBER = "G"; // 手提電話
+const COL_STUDENT_PROGRESS_EMAIL_ADDRESS = "H"; // 電郵地址
+const COL_STUDENT_PROGRESS_ATTENDANCE_PROGRESS = "I"; // 上堂進度
+const COL_STUDENT_PROGRESS_PAYMENT_PROGRESS = "J"; // 繳費進度
+const COL_STUDENT_PROGRESS_PAYMENT_LINK = "K"; // 付款連結
+const COL_STUDENT_PROGRESS_NOTIFICATION_DATE = "L"; // 通知日期 (yyyy-mm-dd)
+const COL_STUDENT_PROGRESS_PAYMENT_PROOF_PROVIDED = "M"; // 已提供付款證明
+const COL_STUDENT_PROGRESS_CERTIFICATE_REISSUE = "N"; // 證書補發
+const COL_STUDENT_PROGRESS_CERTIFICATE_FEE_RECEIVED = "O"; // 己收補證書費用
+const COL_STUDENT_PROGRESS_REMARKS = "P"; // 備註
+
+const ROW_START = 2;
 
 console.log("config initialized");
