@@ -14,9 +14,9 @@ function processPaymentNotice() {
       );
       var payment_progress = readCell(payment_progress_cell);
 
-      if (checkNotifiedForPaymentAlready(payment_progress)) {
+      if (checkNotNotifiedForPayment(payment_progress)) {
         resetResult(i);
-        appendResult(i, "notified already, skipping");
+        appendResult(i, "not" + CONST_NOT_NOTIFIED + " skipping");
       } else {
         resetResult(i);
         appendResult(i, "not notified");
