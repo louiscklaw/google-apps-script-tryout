@@ -7,6 +7,7 @@ function sendPaymentNoticeEmail(row) {
     COL_STUDENT_PROGRESS_EMAIL_ADDRESS
   );
   var student_email_address = readCell(student_email_address_cell);
+
   try {
     var subject = email_title("chinese course");
     // var body = email_content("中文名", "chinese 中文科", "CHI001");

@@ -21,7 +21,13 @@ function processPaymentNotice() {
           `not notified(${CONST_NOT_NOTIFIED}), proceed send payment notification email`
         );
 
-        sendPaymentNoticeEmail(i);
+        var quota_available = checkEmailQuotaAvailable();
+        if (quota_available) {
+          sendPaymentNoticeEmail(i);
+          updateRowToNotificationSent(i);
+        } else {
+          Browser.msgBox(EMAIL_QUOTA_USED_UP);
+        }
       } else {
         resetResult(i);
         appendResult(i, `not "${CONST_NOT_NOTIFIED}" skipping`);
