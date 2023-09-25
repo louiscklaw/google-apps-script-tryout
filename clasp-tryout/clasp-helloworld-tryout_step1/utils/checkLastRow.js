@@ -1,36 +1,37 @@
 function checkLastRow(sheet, current_row) {
   // return true if considered last row, false if not
+  // check email column only
   try {
-    var current_row_cell = readCell(
+    var current_row_cell = getCell(
       sheet,
       current_row,
       COL_STUDENT_PROGRESS_EMAIL_ADDRESS
     );
-    var current_row_cell_1 = readCell(
+    var current_row_cell_1 = getCell(
       sheet,
       current_row + 1,
       COL_STUDENT_PROGRESS_EMAIL_ADDRESS
     );
 
-    var current_row_cell_2 = readCell(
+    var current_row_cell_2 = getCell(
       sheet,
       current_row + 2,
       COL_STUDENT_PROGRESS_EMAIL_ADDRESS
     );
 
-    var current_row_cell_3 = readCell(
+    var current_row_cell_3 = getCell(
       sheet,
       current_row + 3,
       COL_STUDENT_PROGRESS_EMAIL_ADDRESS
     );
 
-    var current_row_cell_4 = readCell(
+    var current_row_cell_4 = getCell(
       sheet,
       current_row + 4,
       COL_STUDENT_PROGRESS_EMAIL_ADDRESS
     );
 
-    var current_row_cell_5 = readCell(
+    var current_row_cell_5 = getCell(
       sheet,
       current_row + 5,
       COL_STUDENT_PROGRESS_EMAIL_ADDRESS

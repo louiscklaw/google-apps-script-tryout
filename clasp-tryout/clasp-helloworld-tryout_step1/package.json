@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cP": "clasp push",
     "gU": "git add . && git commit -m\"update,\"",
-    "watch:cP": "nodemon -L --exec \"npm run cP\""
+    "watch:cP": "nodemon -L --delay 5 --exec \"npm run cP\""
   },
   "keywords": [],
   "author": "",

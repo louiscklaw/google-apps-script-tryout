@@ -1,8 +1,8 @@
-function readCell(sheet, row, column) {
+function readCell(cell) {
   try {
-    var cell = sheet.getRange(column + row);
-    return cell;
+    return cell.getValue();
   } catch (err) {
+    console.log("readCell error");
     console.log(err);
   }
 }
